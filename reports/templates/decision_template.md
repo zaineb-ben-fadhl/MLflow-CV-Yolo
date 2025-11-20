@@ -17,14 +17,7 @@
   - POUR : meilleure recall et mAP, meilleure performance globale  
   - CONTRE : temps d’entraînement légèrement plus long, coût un peu plus élevé  
 - Observations : Run 2 est plus performant et stable sur les métriques clés malgré un léger compromis sur la latence.
-- | Critère              | Run 1 (baseline)            | Run 2 (candidat)            |
-|----------------------|----------------------------|----------------------------|
-| mAP@50               | 0.275                       | 0.306                     |
-| mAP50-95             | 0.231                       | 0.270                     |
-| Recall               | 0.710                       | 0.774                     |
-| Precision            | 0.00836                     | 0.00800                   |
-| Temps / Latence      | rapide                      | un peu plus lent          |
-| Complexité / coût    | faible                      | moyen                     |
+
 
 ## Risques et mitigations
 - Risque 1 : augmentation du temps d’inférence → Mitigation : tester sur batch réel, optimiser batch size si nécessaire  
